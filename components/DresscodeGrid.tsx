@@ -24,20 +24,20 @@ export default function DresscodeGrid() {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") setSelectedIndex(null);
-      if (e.key === "ArrowRight" && selectedIndex !== null) handleNext(e as any);
-      if (e.key === "ArrowLeft" && selectedIndex !== null) handlePrev(e as any);
+      if (e.key === "ArrowRight" && selectedIndex !== null) handleNext(e);
+      if (e.key === "ArrowLeft" && selectedIndex !== null) handlePrev(e);
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedIndex]);
 
-  const handleNext = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleNext = (e?: React.MouseEvent | KeyboardEvent | React.KeyboardEvent) => {
+    if (e && 'stopPropagation' in e) e.stopPropagation();
     setSelectedIndex((prev) => (prev === null ? null : (prev + 1) % images.length));
   };
 
-  const handlePrev = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handlePrev = (e?: React.MouseEvent | KeyboardEvent | React.KeyboardEvent) => {
+    if (e && 'stopPropagation' in e) e.stopPropagation();
     setSelectedIndex((prev) => (prev === null ? null : (prev - 1 + images.length) % images.length));
   };
 
