@@ -26,7 +26,7 @@ export default function RSVPForm() {
       >
         <h3 className="font-display text-4xl text-gold mb-6">Thank You</h3>
         <p className="text-foreground/70 font-sans tracking-wide leading-relaxed text-sm uppercase">
-          Your RSVP has been confirmed. We can't wait to celebrate this special day with you.
+          Your RSVP has been confirmed. We can&apos;t wait to celebrate this special day with you.
         </p>
       </motion.div>
     );
