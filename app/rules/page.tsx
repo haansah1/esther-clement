@@ -1,4 +1,5 @@
 import SectionTitle from "../../components/SectionTitle";
+import DresscodeGrid from "../../components/DresscodeGrid";
 
 export default function RulesPage() {
   return (
@@ -43,6 +44,8 @@ export default function RulesPage() {
                 </ul>
               </div>
             </div>
+            
+            <DresscodeGrid />
           </section>
 
           <section className="glass-card p-8 md:p-12">

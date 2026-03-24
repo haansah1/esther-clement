@@ -39,10 +39,10 @@ export default function GiftsPage() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-          <a href="#" className="flex-1 bg-foreground text-background hover:bg-gold hover:text-white py-5 uppercase tracking-[0.2em] text-[10px] font-semibold transition-all duration-300">
+          <a href="https://revolut.me/estherel6r/pocket/GdQ9eDz8dx" target="_blank" rel="noopener noreferrer" className="flex-1 bg-foreground text-background hover:bg-gold hover:text-white py-5 uppercase tracking-[0.2em] text-[10px] font-semibold transition-all duration-300">
             Revolut Contribution
           </a>
-          <a href="#" className="flex-1 border border-foreground text-foreground hover:bg-foreground hover:text-background py-5 uppercase tracking-[0.2em] text-[10px] font-semibold transition-all duration-300">
+          <a href="https://paypal.me/theeffahs" target="_blank" rel="noopener noreferrer" className="flex-1 border border-foreground text-foreground hover:bg-foreground hover:text-background py-5 uppercase tracking-[0.2em] text-[10px] font-semibold transition-all duration-300">
             PayPal Contribution
           </a>
         </div>
